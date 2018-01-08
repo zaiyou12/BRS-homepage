@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BLACK RUBY STUDIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" type="image/png" href="img/blackrubystudio.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Roboto:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // $("head").load("head.html");
+            $("header").load("header.html");
+            $("header").addClass("scrolled");
+            $("footer").load("footer.html");
+
+        });
+        $(".contact-map").ready(function() {
+            $(".loader").css("display", "none");
+        })
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111510836-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111510836-1');
+    </script>
+</head>
+<meta charset="utf-8">
+
+<body>
+    <div class="loader" id="page-loader"></div>
+    <!-- header start -->
+    <header></header>
+    <!-- main -->
+    <div id="fullpage">
+        <section class="contact section">
+            <div class="inner">
+                <div class="contact-info">
+                    <h2 class="sub-title">Contact Us</h2>
+                    <span>블랙루비스튜디오</span>
+                    <span>서울특별시 성동구 광나루로2길 1</span>
+                    <address><a href="mailto:info@blackrubystudio.com">info@blackrubystudio.com</a></address>
+                </div>
+                <div class="contact-map">
+                    <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=37%C2%B033'00.7%22N%20127%C2%B003'12.4%22E&key=AIzaSyAfkSUniQjPlVSqFaTJs6t4BWAe797-b20" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- footer start -->
+        <footer class="section"></footer>
+    </div>
+    <!-- common js -->
+    <script src="js/nav.js"></script>
+    <script src="js/jquery.fullpage.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                scrollBar: true
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BLACK RUBY STUDIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" type="image/png" href="img/blackrubystudio.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Roboto:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // $("head").load("head.html");
+            $("header").load("header.html");
+            $("header").addClass("scrolled");
+            $("footer").load("footer.html");
+            $(".loader").css("display", "none");
+        });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111510836-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111510836-1');
+    </script>
+</head>
+<meta charset="utf-8">
+
+<body>
+    <div class="loader" id="page-loader"></div>
+    <!-- header start -->
+    <header></header>
+    <!-- team start -->
+    <div id="fullpage">
+        <section class="ceo section">
+            <div class="inner">
+                <div class="ceo-pic">
+                    <img src="img/profile_ceo.jpg" alt="대표 사진">
+                </div>
+                <div class="ceo-info">
+                    <div class="info-con">
+                        <h2>소 재 우(So Jae Woo)</h2>
+                        <span class="role">CEO & Developer</span>
+                        <div class="category-con">
+                            <div class="con-inner">
+                                <div class="category skill">
+                                    <strong>Skills-Develop</strong>
+                                    <ul>
+                                        <li>
+                                            <span>서버구축</span>
+                                            <ul>
+                                                <li>금융관련 인공지능 챗봇 서버</li>
+                                                <li>결제 문자를 분석하고, 결제 장소의 분야 파악 가능</li>
+                                            </ul>
+                                        </li>
+                                        <li class="left">
+                                            <span>웹 개발</span>
+                                            <ul>
+                                                <li>반복되는 서류를 분석, 세무서류를 자동으로 완성하는 웹앱 프론트</li>
+                                                <li>이어폰 리싸이클링 소셜벤처 쇼핑몰 구축</li>
+                                            </ul>
+                                        </li>
+                                        <li class="category-none">
+                                            <span>게임</span>
+                                            <ul>
+                                                <li>Arctic Episode-북극을 배경으로 한 3D 퍼즐 게임</li>
+                                                <li>OVE- 대학생 미술 작품들을 소재로 한 단순 터치 게임</li>
+                                                <li>Oing-스마트 밴드와 연계하여 4~7세 아이의 습관 개선 유도 게임</li>
+                                                <li>BRS PLAY – 인디음악을 활용한 액션형 리듬게임 </li>
+                                            </ul>
+                                        </li>
+                                        <li class="category-none left">
+                                            <span>어플리케이션 </span>
+                                            <ul>
+                                                <li>소비패턴 분석 가계부 어플 개발</li>
+                                                <li>소상공인을 위한 맛집 큐레이션 어플 개발</li>
+                                                <li>1인 가구를 위한 청소관련 소셜벤처 어플 개발</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category skill-mob">
+                                    <ul>
+                                        <li>
+                                            <span>게임</span>
+                                            <ul>
+                                                <li>Arctic Episode-북극을 배경으로 한 3D 퍼즐 게임</li>
+                                                <li>OVE- 대학생 미술 작품들을 소재로 한 단순 터치 게임</li>
+                                                <li>Oing-스마트 밴드와 연계하여 4~7세 아이의 습관 개선 유도 게임</li>
+                                                <li>BRS PLAY – 인디음악을 활용한 액션형 리듬게임 </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span>어플리케이션 </span>
+                                            <ul>
+                                                <li>소비패턴 분석 가계부 어플 개발</li>
+                                                <li>소상공인을 위한 맛집 큐레이션 어플 개발</li>
+                                                <li>1인 가구를 위한 청소관련 소셜벤처 어플 개발</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer start -->
+        <footer class="section"></footer>
+    </div>
+    <!-- js -->
+    <script src="js/memberSlider.js"></script>
+    <script src="js/jquery.fullpage.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                scrollBar: true
+            });
+        });
+    </script>
+</body>
+
+</html>

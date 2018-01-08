@@ -1,0 +1,380 @@
+
+
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <script>
+        if (document.location.protocol == 'http:') {
+            window.stop();
+            document.location.href = document.location.href.replace('http:', 'https:');
+        } 
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BLACK RUBY STUDIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" type="image/png" href="img/blackrubystudio.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Roboto:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family:;
+            src: url("../fonts/");
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery.lazyload.js"></script>
+    <script>        
+        $(document).ready(function() {                  
+            $("header").load("header.html");
+            $("footer").load("footer.html");
+            $(".loader").css("display", "none");
+        });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111510836-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111510836-1');
+    </script>
+
+</head>
+
+<body>
+    <div class="loader" id="page-loader"></div>
+    <!-- header start -->
+    <header></header>
+    <div id="fullpage">
+        <!-- main start -->
+        <span class="scroll-down"><em></em></span>
+        <section class="highlight section">
+            <img class="highlight-img" src="img/highlight.jpg" alt="" />
+            <div class="highlight-con left">
+                <strong>[ 경험의 <b>단순화</b> ]</strong>
+                <span>부족한 삶 속에서 우리가 추구해야 할 가치입니다.</span>
+            </div>
+        </section>
+        <section class="finding-easy section">
+            <div class="inner">
+                <div class="verti-con">
+                    <div class="con-left">
+                        <h3 class="sub-title">쉽게 찾으세요</h3>
+                        <p class="summary">
+                            너무 많은 정보들은 우리가 결정하고 판단하는 것을 복잡하게 만들고 있습니다 쉽게 찾으세요. 중요한 정보를 보여주는 것은 저희들의 몫입니다.
+                        </p>
+                        <p class="summary web">
+                            오늘날 <b>무수히 많은 정보</b>들은 우리가 어떠한 것을 <b>결정하고</b> <b>판단하는 행위를 복잡</b>하게 만들고 있습니다. 심지어 최신 정보만 보려고 해도 쏟아지는 양이 너무 많아, 다 읽지 못하기 십상입니다.
+                            <br />
+                            <b>쉽게 찾으세요.</b> 꼼꼼히 그리고 자세히 찾아, 중요한 정보를 보여주는 것은 저희들의 몫입니다. 잠잘 시간도 부족한 요즘, 정보를 찾는 것에 너무 많은 시간을 소비하지 마십시오.
+                        </p>
+                    </div>
+                    <ul class="img-slider">
+                        <li class="first">
+                            <img src="img/img_slider1.jpg" alt="">
+                        </li>
+                        <li class="second">
+                            <img src="img/img_slider2.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="product section">
+            <div class="inner">
+                <div class="verti-con">
+                    <div class="con-left">
+                        <h3 class="sub-title"><a href="http://www.findbig5.com/" target="_sub">Findbig5</a></h3>
+                        <p class="summary">
+                            전 세계 30여개의 언론사에서 IT 정보를 실시간으로 수집하여 요약하고, 일일 HOT Topic을 제공하는 서비스입니다.
+                        </p>
+                        <p class="summary web">
+                            전 세계 30여개의 언론사에서 IT 정보를 실시간으로 수집하여, <b>일일 HOT Topic</b>을 제공하는 서비스입니다.<br /> 데이터 자동 수집 엔진, 문서 분류 알고리즘, 검색 클러스터링을 활용한 유사문서 분류, 중요도 기반 검색 등의 기능 등을 경험할 수 있으며, 모든 기사를 400자 이내로 요약함으로써 빠른 정보 습득을 경험할 수 있습니다.
+                        </p>
+                    </div>
+                    <div class="con-right">
+                        <a href="http://www.findbig5.com/" target="_sub"><img src="img/Findbig5.png" alt="findbig5" /></a>
+                        <a class="get-more" href="http://www.findbig5.com/" target="_sub">더보기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="technology section">
+            <div class="inner">
+                <div class="technology-con">
+                    <h3 class="sub-title">Technology</h3>
+                    <ul>
+                        <li>
+                            <div class="top-band">
+                                <img src="img/crawling.jpg" alt="" style="transform:translateY(-30px)" />
+                                <div class="cover"></div>
+                            </div>
+                            <h4>자동 정보 수집기</h4>
+                            <div class="tech-thum">
+                                <img src="img/collector.png" alt="" />
+                            </div>
+                            <p class="summary">
+                                일반 뉴스미디어와 IT전문미디어 등 30여개 해외 언론사에서 IT기사를 실시간으로 수집합니다.
+                            </p>
+                            <p class="summary web">
+                                Forbes, NewYorkTimes 등 일반 뉴스미디어와 TechCrunch, TheNextWeb등 IT전문미디어 등 30여개 해외 언론사에서 IT기사를 실시간으로 수집합니다. 2016년 이후 기사들을 자유롭게 찾아 볼 수 있습니다.
+                            </p>
+                        </li>
+                        <li>
+                            <div class="top-band">
+                                <img src="img/search.jpg" alt="" />
+                                <div class="cover sec"></div>
+                            </div>
+                            <h4>검색 엔진</h4>
+                            <div class="tech-thum">
+                                <img src="img/file-search.png" alt="" />
+                            </div>
+                            <p class="summary">
+                                너무 많은 정보들은 우리가 결정하고 판단하는 것을 복잡하게 만들고 있습니다. 쉽게 찾으세요. 중요한 정보를 보여주는 것은 저희들의 몫입니다.
+                            </p>
+                            <p class="summary web">
+                                검색을 통해 사용자가 원하는 기사를 빠르게 찾을 수 있습니다. 유저들의 검색어 기록을 학습, 중요도에 반영하여 사용자 별 맞춤 검색기능이 가능하고, 기사들을 유사 기사로 묶어 내용이 비슷한 기사를 다시 보지 않을 수 있습니다.
+                            </p>
+                        </li>
+                        <li class="tech-web">
+                            <div class="top-band">
+                                <img src="img/nlp.jpg" alt="" style="transform:scale(1.2); transform-origin:top" />
+                                <div class="cover third"></div>
+                            </div>
+                            <h4>자연어 처리 AI 엔진</h4>
+                            <div class="tech-thum">
+                                <img src="img/contract.png" alt="" style="margin-left:-25px" />
+                            </div>
+                            <p class="summary">
+                                토픽 모델링 튜닝모델(LDA와 LSI 두 모델을 결합)을 활용하여 주제어를 뽑고, 문서 간 중요도를 분석하는 엔진을 제공합니다.
+                            </p>
+                            <p class="summary web">
+                                형태소 분석을 기반으로 하여 문서 내 중요단어 분석 뿐 아니라 문서의 역가중치를 계산하여 문서 간 중요도를 분석하는 엔진을 제공합니다. 토픽 추출의 정확도를 위하여 LDA와 LSI 두 모델을 결합한 튜닝모델을 활용하고 있습니다. 또한 기사 400자 이내 요약기능으로 사용자에게 전문을 읽는 부담을 줄이고 있습니다.
+                            </p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="tech-web">
+                            <div class="top-band">
+                                <img src="img/blockchain.jpg" alt="" style="transform:scale(1.2); transform-origin:top" />
+                                <div class="cover fourth"></div>
+                            </div>
+                            <h4>블록체인</h4>
+                            <div class="tech-thum">
+                                <img src="img/blockchain.png" alt="" />
+                            </div>
+                            <p class="summary">
+                                암호화 공공장부, 거래 기록 공유로 거래장부의 투명성을 더하는 기술, 체인처럼 엮여 있는 데이터 블록들은 모든 네트워크 참여자에게 실시간으로 전파됩니다.
+                            </p>
+                            <p class="summary web">
+                                전파된 정보를 네트워크 사용자 간 검증으로 별도의 중개기관 없이도 신뢰성 보장합니다. 현재는 금융 분야에만 치우쳐 적용되고 있지만, 다양한 영역에 활용될 수 있으며, 인공지능, 사물인터넷 등 첨단 기술과의 시너지를 통해 새로운 비즈니스를 창출할 수 있습니다.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="technology mob section">
+            <div class="inner">
+                <div class="technology-con">
+                    <ul>
+                        <li>
+                            <div class="top-band">
+                                <img src="img/nlp.jpg" alt="" style="transform:scale(1.2); transform-origin:top" />
+                                <div class="cover third"></div>
+                            </div>
+                            <h4>자연어 처리 엔진</h4>
+                            <div class="tech-thum">
+                                <img src="img/contract.png" alt="" style="margin-left:-25px" />
+                            </div>
+                            <p class="summary">
+                                토픽 모델링 튜닝모델(LDA와 LSI 두 모델을 결합)을 활용하여 주제어를 뽑고, 문서 간 중요도를 분석하는 엔진을 제공합니다.
+                            </p>
+                            <p class="summary web">
+                                형태소 분석을 기반으로 하여 문서 내 중요단어 분석 뿐 아니라 문서의 역가중치를 계산하여 문서 간 중요도를 분석하는 엔진을 제공합니다. 토픽 추출의 정확도를 위하여 LDA와 LSI 두 모델을 결합한 튜닝모델을 활용하고 있습니다. 또한 기사 400자 이내 요약기능으로 사용자에게 전문을 읽는 부담을 줄이고 있습니다.
+                            </p>
+                        </li>
+                        <li>
+                            <div class="top-band">
+                                <img src="img/blockchain.jpg" alt="" style="transform:scale(1.2); transform-origin:top" />
+                                <div class="cover fourth"></div>
+                            </div>
+                            <h4>블록체인</h4>
+                            <div class="tech-thum">
+                                <img src="img/blockchain.png" alt="" />
+                            </div>
+                            <p class="summary">
+                                암호화 공공장부, 거래 기록 공유로 거래장부의 투명성을 더하는 기술, 체인처럼 엮여 있는 데이터 블록들은 모든 네트워크 참여자에게 실시간으로 전파됩니다.
+                            </p>
+                            <p class="summary web">
+                                전파된 정보를 네트워크 사용자 간 검증으로 별도의 중개기관 없이도 신뢰성 보장합니다. 현재는 금융 분야에만 치우쳐 적용되고 있지만, 다양한 영역에 활용될 수 있으며, 인공지능, 사물인터넷 등 첨단 기술과의 시너지를 통해 새로운 비즈니스를 창출할 수 있습니다.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="history section">
+            <div class="inner">
+                <h3 class="sub-title">History</h3>
+                <div class="history-tree">
+                    <ol class="tree-branch-verti">
+                        <li class="hot">
+                            <i class=""></i>
+                            <em>'18.01</em>
+                            <span>정식 출시 예정</span>
+                        </li>
+                        <li>
+                            <i class=""></i>
+                            <em>'17.11</em>
+                            <span>Findbig5 오픈 베타</span>
+                        </li>
+                        <li>
+                            <i class=""></i>
+                            <em>'17.06</em>
+                            <span>17년 창업선도대학 선정</span>
+                        </li>
+                        <li>
+                            <i class=""></i>
+                            <em>'17.06</em>
+                            <span>예비 사회적기업 선정</span>
+                        </li>
+                        <li class="hot">
+                            <i class=""></i>
+                            <em>'17.02</em>
+                            <span>K-Global 빅데이터 스타트업 지원사업 선정</span>
+                        </li>
+                        <li>
+                            <i class=""></i>
+                            <em>'17.02</em>
+                            <span>Findbig5 컨설팅 기업과 클로즈 베타</span>
+                        </li>
+                        <li class="hot">
+                            <i class=""></i>
+                            <em>'16.10</em>
+                            <span>G-star 게임 개발사 선정</span>
+                        </li>
+                        <li class="hot">
+                            <i class=""></i>
+                            <em>'16.10</em>
+                            <span style="letter-spacing: -2px">미국시애틀초청, Korea-WAState ICT Forum with Startup NOW pitch</span>
+                        </li>
+                        <li class="hot">
+                            <i class=""></i>
+                            <em>'16.09</em>
+                            <span style="letter-spacing: -2px">Asia Pacific Social Venture Idea Competition 국내부분 대상</span>
+                        </li>
+                        <li>
+                            <i class=""></i>
+                            <em>'16.04</em>
+                            <span>(주)블랙루비스튜디오 법인 설립</span>
+                        </li>
+                        <li>
+                            <i class=""></i>
+                            <em>'16.02</em>
+                            <span>예비사회적기업가 육성사업 선정</span>
+                        </li>
+                    </ol>
+                    <ol class="tree-branch">
+                        <li class="on">
+                            <em>'16.02</em>
+                            <i></i>
+                        </li>
+                        <li>
+                            <em>'16.04</em>
+                            <i></i>
+                        </li>
+                        <li class="hot">
+                            <em>'16.09</em>
+                            <i class=""></i>
+                            <span>Asia Pacific Social Venture Idea Competition 국내부분 대상</span>
+                        </li>
+                        <li class="hot">
+                            <em>'16.10</em>
+                            <i></i>
+                            <span>미국시애틀초청, Korea-WAState ICT Forum</span>
+                        </li>
+                        <li class="hot">
+                            <em>'16.10</em>
+                            <i class=""></i>
+                            <span>G-star 게임 개발사 선정</span>
+                        </li>
+                        <li>
+                            <em>'17.02</em>
+                            <i></i>
+                        </li>
+                        <li class="hot">
+                            <em>'17.02</em>
+                            <i></i>
+                            <span>K-Global 빅데이터 스타트업 지원사업 선정</span>
+                        </li>
+                        <li>
+                            <em>'17.06</em>
+                            <i></i>
+                        </li>
+                        <li>
+                            <em>'17.06</em>
+                            <i></i>
+                        </li>
+                        <li>
+                            <em>'17.11</em>
+                            <i></i>
+                        </li>
+                        <li class="hot">
+                            <em>18.01</em>
+                            <i></i>
+                            <span>정식 출시 예정</span>
+                        </li>
+                    </ol>
+                    <ol class="summary-list">
+                        <li>예비사회적 기업가 육성사업 선정</li>
+                        <li>(주)블랙루비스튜디오 법인설립</li>
+                        <li>Asia Pacific Social Venture Idea Competition 국내부분 대상</li>
+                        <li>미국 시애틀 초청, korea-WAState ICT Forum With Startup NOW pitch</li>
+                        <li>G-star 게임 개발사 선정</li>
+                        <li>Findbig5 컨설팅 기업과 클로즈 베타</li>
+                        <li>K-Global 빅데이터 스타트업 지원사업 선정</li>
+                        <li>예비 사회적기업 선정</li>
+                        <li>17년 창업선도대학 선정</li>
+                        <li>Findbig5 오픈 베타</li>
+                        <li>정식 출시 예정</li>
+                    </ol>
+                    <p class="on-summary">예비사회적 기업가 육성사업 선정</p>
+                </div>
+            </div>
+        </section>
+        <!-- footer start -->
+        <footer class="section"></footer>
+    </div>
+    <!-- js -->
+    <script src="js/common.js"></script>
+    <script src="js/historySlider.js"></script>
+    <script src="js/jquery.fullpage.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                scrollBar: true
+            });
+            $(".highlight-con").css("animation", "aniTitle 0.9s ease");
+            $("img").lazyload({
+                threshold: 1000,
+                effect: 'fadeIn',
+                effectTime: 500
+
+            });
+        });
+    </script>
+</body>
+
+</html>
