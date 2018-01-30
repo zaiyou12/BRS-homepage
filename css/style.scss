@@ -1598,6 +1598,22 @@ $membersHeight: 550px;
     &::after {
         display: none;
     }
+    .swiper-container {
+        height: 100%;
+        .swiper-button-next, .swiper-button-prev {
+            background-image: none !important;
+            width: 50px;               
+            img {
+                width: 100%;
+            }         
+        }
+        .swiper-button-next {
+            margin-right: -15px;
+        }
+        .swiper-button-prev {
+            margin-left: -15px;
+        }
+    }
     .inner {
         padding: 40px 0;
         max-width: 100%;
@@ -1611,6 +1627,9 @@ $membersHeight: 550px;
         // @include responsive(medium-screens) {
         //     padding: 0 40px;
         // }
+        ul {
+            width: 100%;
+        }
         .summary {
             font-size: 16px;
             @include responsive(medium-screens) {
@@ -1646,7 +1665,7 @@ $membersHeight: 550px;
             top: -5%;
             overflow: hidden;
             @include responsive(medium-screens) {
-                top: -125px;
+                top: -20px;
             }
             li {
                 overflow: hidden;
@@ -1688,8 +1707,21 @@ $membersHeight: 550px;
                         }
                         .summary {
                             height: 90px;
+                            padding: 0 15px;
                             @include responsive(medium-screens) {
                                 height: auto;
+                                padding: 0;                                
+                            }
+                        }
+                        .link {
+                            color: black;
+                            display: inline-block;
+                            margin-top: 10px;
+                        }
+                        &.sec-info {
+                            padding: 1% 0;
+                            .summary {
+                                font-size: 19px;
                             }
                         }
                     }
@@ -1699,7 +1731,7 @@ $membersHeight: 550px;
                         width: 350px;
                         height: 200px;
                         @include responsive(medium-screens) {
-                            margin-right: 70px;
+                            margin-right: 2%;
                             width: 370px;
                             height: auto;
                         }
@@ -1808,7 +1840,7 @@ $membersHeight: 550px;
             position: relative;
             width: 100%;
             margin: 0 auto;
-            iframe {
+            iframe { 
                 width: 100% !important;
                 height: 100% !important;
                 min-height: 280px;

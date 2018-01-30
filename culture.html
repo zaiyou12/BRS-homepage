@@ -23,7 +23,9 @@
             $("footer").load("footer.html");
             $(".loader").css("display", "none");
         });
-    </script>
+    </script>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>     -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111510836-1"></script>
     <script>
@@ -51,7 +53,7 @@
                 <span>팀이 함께 성장하며 효율적으로 그리고 간단하게</span>
             </div>
         </section>
-        <section class="culture section">
+        <section class="culture section ">
             <div class="inner">
                 <div class="culture-con">
                     <img class="culture-img" src="img/img_culture.png" alt="">
@@ -65,76 +67,102 @@
                 </div>
             </div>
         </section>
-        <section class="culture section">
-            <div class="inner slide">
-                <ul class="culture-list">
-                    <li class="right">
-                        <div class="list-left pic">
-                            <img src="img/study.jpg" alt="study">
-                        </div>
-                        <div class="list-right info">
-                            <h4>Study</h4>
-                            <p class="summary">
-                                특기가 각기 다른 팀원들이 자신이 자신 있는 분야에 대해 강의를 진행합니다. 다양한 주제로 강의를 진행하여 폭넓은 사고를 가능하게 하여, 팀원들의 융합적 사고를 도모하고 있습니다.
-                            </p>
-                            <p class="summary web">
-                                특기가 각기 다른 팀원들이 자신이 자신 있는 분야에 대해 강의를 진행합니다. 서버 개발, UI/UX 디자인, 스타트업 BM 서적, 인공지능의 이해 등 다양한 주제로 강의를 진행하여 폭넓은 사고를 가능하게 하여, <b>팀원들의 융합적 사고를 도모</b>하고 있습니다. 17년 2월부터 매주 1회 진행하고 있습니다.
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="inner slide">
-                <ul class="culture-list">
-                    <li class="right">
-                        <div class="list-right pic">
-                            <img src="img/Python_class.jpg" alt="파이썬 클래스">
-                        </div>
-                        <div class="list-left info">
-                            <h4>Python Class(외부)</h4>
-                            <p class="summary">
-                                외부 지원자(개발자 + 비개발자)와 함께 진행하는 교육 프로그램으로써 기초 프로그래밍 공부를 통해 개발 전반에 대한 이해를 돕는 무료 프로그램입니다.
-                            </p>
-                            <p class="summary web">
-                                블랙루비 주관의 ‘재미그래밍’ 프로그램은 개발에 관심있으신 <b>외부 지원자(개발자 + 비개발자)와 함께 진행하는 교육 프로그램</b>으로써 기초 프로그래밍 공부를 통해 개발 전반에 대한 이해를 돕는 무료 프로그램입니다.
-                                <br /> 1기 (‘17.03~‘17.05)– 비개발자도 쉽게 배우는 프로그래밍<br/> 2기 (‘17.09~‘17.12)– 데이터 과학의 이해
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="inner slide">
-                <ul class="culture-list">
-                    <li class="right">
-                        <div class="list-left pic">
-                            <img src="img/Weekly_meeting.JPG" alt="weekly meeting">
-                        </div>
-                        <div class="list-right info">
-                            <h4>Weekly Meeting</h4>
-                            <p class="summary">
-                                회사의 상황을 공유할뿐 아니라 방향성을 이해하고자, 매주 주간동향이라는 이름으로 팀별 진행상황을 발표 및 피드백하는 시간을 가지고 있습니다.
-                            </p>
-                            <p class="summary web">
-                                회사의 상황을 전체 공유하고자 하는 목적으로, <b>회사 방향성에 대한 이해</b>와 자신이 맡고 있지 않는 프로젝트에 대한 이해를 높이기 위해 진행하고 있습니다. <b>매주 주간동향</b>이라는 이름으로 팀별 진행상황을 발표하고, 질의 응답 및 피드백 시간을 가지고 있습니다.
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <img class="guider" src="img/ico_finger_right.png" alt="왼쪽으로 넘기세요" />
-        </section>
+        <section class="culture section">          
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="inner swiper-slide">
+                        <ul class="culture-list">
+                            <li class="right">
+                                <div class="list-left pic">
+                                    <img src="img/study.jpg" alt="study">
+                                </div>
+                                <div class="list-right info">
+                                    <h4>Study</h4>
+                                    <p class="summary">
+                                        특기가 각기 다른 팀원들이 자신이 자신 있는 분야에 대해 강의를 진행합니다. 다양한 주제로 강의를 진행하여 폭넓은 사고를 가능하게 하여, 팀원들의 융합적 사고를 도모하고 있습니다.
+                                    </p>
+                                    <p class="summary web">
+                                        특기가 각기 다른 팀원들이 자신이 자신 있는 분야에 대해 강의를 진행합니다. 서버 개발, UI/UX 디자인, 스타트업 BM 서적, 인공지능의 이해 등 다양한 주제로 강의를 진행하여 폭넓은 사고를 가능하게 하여, <b>팀원들의 융합적 사고를 도모</b>하고 있습니다. 17년 2월부터 매주 1회 진행하고 있습니다.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="inner swiper-slide">
+                        <ul class="culture-list">
+                            <li class="right">
+                                <div class="list-right pic">
+                                    <img src="img/Python_class.jpg" alt="파이썬 클래스">
+                                </div>
+                                <div class="list-left info sec-info">
+                                    <h4>Python Class(외부)</h4>
+                                    <p class="summary">
+                                        외부 지원자(개발자 + 비개발자)와 함께 진행하는 교육 프로그램으로써 기초 프로그래밍 공부를 통해 개발 전반에 대한 이해를 돕는 무료 프로그램입니다.
+                                        <a class="link" href="https://fungramming.github.io/class-list/"><b>재미그래밍</b>: https://fungramming.github.io/class-list/</a>                                
+                                    </p>
+                                    <p class="summary web">
+                                        블랙루비 주관의 ‘재미그래밍’ 프로그램은 개발에 관심있으신 <b>외부 지원자(개발자 + 비개발자)와 함께 진행하는 교육 프로그램</b>으로써 기초 프로그래밍 공부를 통해 개발 전반에 대한 이해를 돕는 무료 프로그램입니다.
+                                        <br /> 1기 (‘17.03~‘17.05)– 비개발자도 쉽게 배우는 프로그래밍<br/> 2기 (‘17.09~‘17.12)– 데이터 과학의 이해<br/>
+                                        <a class="link" href="https://fungramming.github.io/class-list/"><b>재미그래밍</b>: https://fungramming.github.io/class-list/</a>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="inner swiper-slide">
+                        <ul class="culture-list">
+                            <li class="right">
+                                <div class="list-left pic">
+                                    <img src="img/Weekly_meeting.JPG" alt="weekly meeting">
+                                </div>
+                                <div class="list-right info">
+                                    <h4>Weekly Meeting</h4>
+                                    <p class="summary">
+                                        회사의 상황을 공유할뿐 아니라 방향성을 이해하고자, 매주 주간동향이라는 이름으로 팀별 진행상황을 발표 및 피드백하는 시간을 가지고 있습니다.
+                                    </p>
+                                    <p class="summary web">
+                                        회사의 상황을 전체 공유하고자 하는 목적으로, <b>회사 방향성에 대한 이해</b>와 자신이 맡고 있지 않는 프로젝트에 대한 이해를 높이기 위해 진행하고 있습니다. <b>매주 주간동향</b>이라는 이름으로 팀별 진행상황을 발표하고, 질의 응답 및 피드백 시간을 가지고 있습니다.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>             
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">
+                    <img src="img/next_btn.png" alt="다음으로">
+                </div>
+                <div class="swiper-button-prev">
+                    <img src="img/prev_btn.png" alt="이전으로">
+                </div>       
+                <img class="guider" src="img/ico_finger_right.png" alt="왼쪽으로 넘기세요" />
+            </div>            
+        </section>        
         <!-- footer start -->
         <footer class="section"></footer>
     </div>
     <!-- common js -->
     <script src="js/common.js"></script>
     <script src="js/jquery.fullpage.min.js"></script>
+    <script src="js/swiper.min.js"></script>    
     <script>
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 scrollBar: true
             });
             $(".highlight-con").css("animation", "aniTitle 0.9s ease");
+            
+            var swiper = new Swiper('.swiper-container', {               
+                slidesPerView: 1,
+                spaceBetween: 30,
+                speed: 500,
+                loop: true,               
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+              });
+
         });
     </script>
 </body>

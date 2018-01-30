@@ -44,5 +44,5 @@ $(document).ready(function() {
 
     /* nav button */
     var navOpenBtn = document.getElementsByClassName(".nav-open-btn")[0];
-    console.log(navOpenBtn);
+    
 });

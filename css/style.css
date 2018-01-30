@@ -1303,6 +1303,17 @@ header nav.closed-nav {
   position: relative; }
   .culture::after {
     display: none; }
+  .culture .swiper-container {
+    height: 100%; }
+    .culture .swiper-container .swiper-button-next, .culture .swiper-container .swiper-button-prev {
+      background-image: none !important;
+      width: 50px; }
+      .culture .swiper-container .swiper-button-next img, .culture .swiper-container .swiper-button-prev img {
+        width: 100%; }
+    .culture .swiper-container .swiper-button-next {
+      margin-right: -15px; }
+    .culture .swiper-container .swiper-button-prev {
+      margin-left: -15px; }
   .culture .inner {
     padding: 40px 0;
     max-width: 100%;
@@ -1318,6 +1329,8 @@ header nav.closed-nav {
     @media only screen and (min-width: 768px) {
       .culture .inner.slide {
         width: 100vw !important; } }
+    .culture .inner ul {
+      width: 100%; }
     .culture .inner .summary {
       font-size: 16px; }
       @media only screen and (min-width: 768px) {
@@ -1350,7 +1363,7 @@ header nav.closed-nav {
       overflow: hidden; }
       @media only screen and (min-width: 768px) {
         .culture .inner .culture-list {
-          top: -125px; } }
+          top: -20px; } }
       .culture .inner .culture-list li {
         overflow: hidden;
         text-align: center; }
@@ -1395,10 +1408,20 @@ header nav.closed-nav {
                   left: 0;
                   margin-left: 0; } }
             .culture .inner .culture-list li div.info .summary {
-              height: 90px; }
+              height: 90px;
+              padding: 0 15px; }
               @media only screen and (min-width: 768px) {
                 .culture .inner .culture-list li div.info .summary {
-                  height: auto; } }
+                  height: auto;
+                  padding: 0; } }
+            .culture .inner .culture-list li div.info .link {
+              color: black;
+              display: inline-block;
+              margin-top: 10px; }
+            .culture .inner .culture-list li div.info.sec-info {
+              padding: 1% 0; }
+              .culture .inner .culture-list li div.info.sec-info .summary {
+                font-size: 19px; }
           .culture .inner .culture-list li div.pic {
             border-radius: 2px;
             overflow: hidden;
@@ -1406,7 +1429,7 @@ header nav.closed-nav {
             height: 200px; }
             @media only screen and (min-width: 768px) {
               .culture .inner .culture-list li div.pic {
-                margin-right: 70px;
+                margin-right: 2%;
                 width: 370px;
                 height: auto; } }
             @media only screen and (min-width: 992px) {
